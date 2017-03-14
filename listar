@@ -1,0 +1,21 @@
+#!/bin/bash
+tput setaf 7 ; tput setab 6 ; tput bold ; printf '%50s%s%-130s\n' "Conectados"
+echo ; tput sgr0
+echo
+tput setaf 7 ; tput setab 6 ; tput bold ; printf "Total de Usuarios" ; tput sgr0
+echo
+cat /root/usuarios.db |wc -l
+echo ; tput sgr0
+tput setaf 7 ; tput setab 6 ; tput bold ; printf "Online"
+netstat -nt | awk '$4 ~ /:(443)$/ && $6 ~ /ESTABLISHED/ {print $5}' | cut -d: -f3 | sort | uniq -c 
+echo ; tput sgr0
+echo
+tput setaf 7 ; tput setab 6 ; tput bold ; printf "hora / usuarios"
+echo ; tput sgr0
+echo
+ps -aux | grep sshd | grep -v root | gawk -F ' ' '{print $9, $12}' | sort -n
+	    echo
+	 
+	echo
+	exit 
+done
