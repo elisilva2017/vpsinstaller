@@ -21,7 +21,7 @@ tput setaf 2 ; tput bold ; printf '%s' "df -h " ; tput setaf 7 ; printf '%s' "- 
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "speedtest-cli " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "verificar a velocidade da conexão" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "userbackup " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "criarbackup ou resstaurar" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "userbackup " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "criarbackup ou restaurar" ; echo ""
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "vpn " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "instalador para openVpn e criar/remover certificados" ; echo ""
 tput sgr0
